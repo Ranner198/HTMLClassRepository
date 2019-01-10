@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 
 <html>
-	<style>
-
-		html {
-			background-color: #42aaf4;
-		}
-
-		.centerImg {
-		  display: block;
-		  margin: auto;  
-		  width:   50%;
-		}
-
-		.borderClass {
-			border: 10px inset #42f4aa;
-			background-color: #a8a8a8;
-			margin-left:  30%;
-			margin-right: 30%;
-			padding: 10px;
-		}
-		.imgBorder {
-			border: 10px inset #42f4aa;
-		}
-
-	</style>
+	<head>
+		<meta charset="UTF-8">
+		<link href="FirstWebpage.css" rel="stylesheet" type="text/css">
+	</head>
 	<body>
 
+		<br style="display: block, margin: 50px 0;">
+
 		<div class="borderClass">
-			<h1 style="text-align: center;">Sample Text</h1>
+			<h1 class="centeredText">Do you even Javascript Bro?</h1>
 		</div>
+
 		<br>
-		<img src="./images/01.jpg" class="centerImg imgBorder">
+		<hr size="2"> <!--This is really dirty lol-->
 		<br>
-		<img src="./images/02.jpg" class="centerImg imgBorder">
+
+		<div class="centerImg imgBorder">
+			<script src="https://gist.github.com/Ranner198/7da8aa8644fb544cd4e05cf2e93226c7.js"></script>
+		</div>
+
+		<div class="centeredText">
+			<h3>This is a Webscraper I wrote a couple of weeks back for a tutorial for my main website</h3>
+			<h2><a href="http://rancrump.com/webscrape-js/" target="_blank" style="align-content: center;" class="link">View it here!</a></h2>
+		</div>
+		
 		<br>
-		<img src="./images/03.jpg" class="centerImg imgBorder">
-		<br>
-		<img src="./images/04.jpg" class="centerImg imgBorder">
+
+		<div>
+			<img src="./images/01.jpg" class="centerImg imgBorder">
+			<img src="./images/02.jpg" class="centerImg imgBorder">
+			<img src="./images/03.jpg" class="centerImg imgBorder">
+			<img src="./images/04.jpg" class="centerImg imgBorder">
+		</div>
 
 	</body>
 </html>

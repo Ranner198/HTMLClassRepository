@@ -1,0 +1,91 @@
+html {
+	background-color: #42aaf4;
+}
+
+.centerImg {
+  display: block;
+  margin: auto;  
+  width:   50%;
+}
+
+.borderClass {
+	border: 10px inset #42f4aa;
+	background-color: #a8a8a8;
+	margin-left:  30%;
+	margin-right: 30%;
+	padding: 10px;
+}
+.imgBorder {
+	border: 10px inset #42f4aa;
+	margin-bottom: 30px;
+}
+.centeredText {
+	text-align: center;
+}
+.link { 
+  color: red !important;
+}
+
+
+.gist .gist-file {
+	margin-bottom: 0 !important;
+}
+
+
+
+
+/* Gist Embed - Dark Theme Styling - Thanks to MattD */
+  
+/* Body */
+.gist-data tbody { background-color: #2b2b2b; }
+
+/* Line Numbers */
+.gist-data tbody td:nth-of-type(1) {
+  color: #2B91AF !important;
+}
+
+/* Code */
+.gist-data tbody td:nth-of-type(2){
+  color: #FFFFFF !important;
+}
+
+/* Comments */
+.pl-c
+{
+  color: #57A64A !important;
+}
+
+/* Function */
+.pl-k, tbody tr:first-child .blob-code, tbody tr:last-child .blob-code
+{
+  color: #569CD6 !important;
+}
+
+/* Function Name */
+.pl-en
+{
+  color: #FFFFFF !important;
+}
+
+/* Function Method */
+.pl-c1
+{
+  color: #FFFFFF !important;
+}
+/* "'s around Strings */
+.pl-pds
+{
+  color: #D69D85 !important;
+}
+
+/* Strings */
+.pl-s
+{
+  color: #D69D85 !important;
+}
+
+/* The Other Text that this wasn't making white */
+.pl-smi
+{
+	color: #FFFFFF !important;
+}
