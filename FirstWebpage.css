@@ -1,5 +1,16 @@
 html {
-	background-color: #42aaf4;
+	/*background-image: linear-gradient(to bottom, #00ffcc, #274d62);*/
+	color: white;
+}
+ 
+body {
+	margin: 0;
+	padding-top: 40px;
+}
+
+:root {
+  --border-color: #ffdd75; 
+  --border-size: 12px;
 }
 
 .centerImg {
@@ -9,14 +20,17 @@ html {
 }
 
 .borderClass {
-	border: 10px inset #42f4aa;
-	background-color: #a8a8a8;
+	border-radius: 10px;
+	border: var(--border-size) inset var(--border-color);
+	background-color: #68707b;
+	color: white;
 	margin-left:  30%;
 	margin-right: 30%;
 	padding: 10px;
 }
 .imgBorder {
-	border: 10px inset #42f4aa;
+	border-radius: 10px;
+	border: var(--border-size) inset var(--border-color);
 	margin-bottom: 30px;
 }
 .centeredText {
@@ -27,12 +41,59 @@ html {
 }
 
 
-.gist .gist-file {
-	margin-bottom: 0 !important;
+/* Background Image */
+.background {
+	background-image: url(http://rancrump.com/wp-content/uploads/2018/02/WebsiteBackground.png);
+	background-position: left top;
+	background-size: auto;
+	background-repeat: repeat;
+	background-attachment: scroll;
+}
+
+
+/* Nav CSS */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.nav {
+	font-size: 35px;
+}
+
+.active {
+  background-color: #4CAF50;
 }
 
 
 
+
+/* Make the JS Sample sit flush on the border */
+.gist .gist-file {
+	margin-bottom: 0 !important;
+}
 
 /* Gist Embed - Dark Theme Styling - Thanks to MattD */
   
