@@ -1,15 +1,25 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+var port = 8080;
 
-app.use(express.static(path.join(__dirname, '/home/static')));
-app.use(express.static(path.join(__dirname, '/home/images')));
+app.use(express.static(path.join(__dirname, '/home')));
 
-console.log("I am running at: " + path);
+//Err 404
+app.use(function (req, res, next) {
+	res.status(404).sendFile(path.join(__dirname + '/home/redirect404.html'))
+});
 
-// viewed at http://localhost:8080
+console.log("I am running at: " + port);
+
+//Home Page
 app.get('/home/', function(req, res) {
     res.sendFile(path.join(__dirname + '/home/index.html')); 
 });
 
-app.listen(8080);
+app.get('/gallery/', function(req, req)
+{
+	res.sendFile(path.join(__dirname + '/home/gallery.html/'));
+});
+
+app.listen(port);
