@@ -87,14 +87,34 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
-
 .timer {
   background-color: white;
   color: black;
   text-align: center;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.item {
+  font-size: 15px;
+  text-align: center;
+}
 
+a:hover{
+  background-color: grey;
+  color: blue;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2.5px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 
 /* Make the JS Sample sit flush on the border */
 .gist .gist-file {
