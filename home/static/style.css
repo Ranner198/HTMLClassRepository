@@ -8,15 +8,17 @@ body {
 	padding-top: 40px;
 }
 
+/*CSS Variables*/
 :root {
-  --border-color: #ffdd75; 
-  --border-size: 12px;
+	--Loader-color: #42e8f4;
+  	--border-color: #ffdd75; 
+  	--border-size: 12px;
 }
 
 .centerImg {
-  display: block;
-  margin: auto;  
-  width:   50%;
+	display: block;
+	margin: auto;  
+	width:   50%;
 }
 
 .borderClass {
@@ -175,4 +177,27 @@ hr {
 .pl-smi
 {
 	color: #FFFFFF !important;
+}
+
+/* Loading Effect */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid var(--Loader-color);
+  border-bottom: 16px solid var(--Loader-color);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
