@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 
 		<!-- Links -->
 
 		<link rel="stylesheet" type="text/css" href="./static/styleClassPage.css">		
-		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto+Slab:100" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100" rel="stylesheet">
 
 		<title>ARS 332 Spring '19</title>
 	</head>
-	<body class="background">
+	<body class="background" onload="Test()">
 
 		<div id="TopOfPage">
 		</div>
@@ -25,7 +26,7 @@
 			 |_|  |_|    |_|    |_|  |_| |______|                            
 		-->
 
-		<br style="display: block, margin: 50px 0;">
+		<br style="display: block; margin: 50px 0;">
 
 		<br>
 
@@ -34,7 +35,7 @@
 		</div>
 
 		<br>
-		<hr size="2"> <!--This is really dirty lol-->
+		<hr> <!--This is really dirty lol-->
 		<br>
 
 		<div class="borderClass" style="text-align: center; border: 0px !important;">
@@ -45,122 +46,79 @@
 			<br>
 			<br>			
 
-			<div class="preview tooltip">	
-				<span class="tooltiptext">Roxy - Teacher</span>						  					
-				<a href="http://webpages.uah.edu/~veaseyr/" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>				    
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~veaseyr/" frameborder="0" allowfullscreen>Rie</iframe>
-				</a>
+				<script type="text/javascript" src="./static/iframe.js"></script>
+
+			<div onclick="Click(0)" class="preview tooltip">	
+				<p class="tooltiptext">Roxy - Teacher</p>						  			    
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~veaseyr/" style="overflow:hidden;"></iframe>
 			</div>
 
-			<div class="preview tooltip">	
-				<span class="tooltiptext">Rie</span>						  					
-				<a href="http://webpages.uah.edu/~rf0014/" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>				    
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~rf0014/" frameborder="0" allowfullscreen>Rie</iframe>
-				</a>
+			<div onclick="Click(1)" class="preview tooltip">	
+				<p class="tooltiptext">Rie</p>						  					    
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~rf0014/" style="overflow:hidden;"></iframe>
 			</div>
 						
-			<div class="preview tooltip">			
-				<span class="tooltiptext">Shelby</span>
-				<a href="http://webpages.uah.edu/~sal0026/" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~sal0026/" frameborder="0" allowfullscreen>Shelby</iframe>
-				</a>				
+			<div onclick="Click(2)" class="preview tooltip">			
+				<p class="tooltiptext">Shelby</p>
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~sal0026/" style="overflow:hidden;"></iframe>				
 			</div>
 			
-			<div class="preview tooltip">
-				<span class="tooltiptext">Anna</span>
-				<a href="http://webpages.uah.edu/~amm0073/" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~amm0073/" frameborder="0" allowfullscreen>Anna</iframe>
-				</a>				
+			<div onclick="Click(3)" class="preview tooltip">
+				<p class="tooltiptext">Anna</p>
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~amm0073/" style="overflow:hidden;"></iframe>				
 			</div>
 			
-			<div class="preview tooltip">
-				<span class="tooltiptext">Zoe</span>
-				<a href="http://webpages.uah.edu/~zkb0003/sblist.html" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~zkb0003/sblist.html" frameborder="0" allowfullscreen>Zoe</iframe>
-				</a>				
+			<div onclick="Click(4)" class="preview tooltip">
+				<p class="tooltiptext">Zoe</p>
+				    <iframe  class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~zkb0003/sblist.html" style="overflow:hidden;"></iframe>		
 			</div>
 
-			<div class="preview tooltip">
-				<span class="tooltiptext">Jessica</span>
-				<a href="http://webpages.uah.edu/~csm0024/sbList.html" target="_blank" class="linkwrap">
+			<div onclick="Click(5)" class="preview tooltip">
 				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~csm0024/sbList.html" frameborder="0" allowfullscreen>Jessica</iframe>
-				</a>				
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~csm0024/" style="overflow:hidden;"></iframe>			
 			</div>
 
-			<div class="preview tooltip">
-				<span class="tooltiptext">Tj</span>
-				<a href="http://webpages.uah.edu/~tjl0015/" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~tjl0015/" frameborder="0" allowfullscreen>Tj</iframe>
-				</a>				
+			<div onclick="Click(6)" class="preview tooltip">
+				<p class="tooltiptext">Tj</p>
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~tjl0015/" style="overflow:hidden;"></iframe>			
 			</div>
 
-			<div class="preview tooltip">
-				<span class="tooltiptext">Drew</span>
-				<a href="http://webpages.uah.edu/~dcw0025/" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~dcw0025/" frameborder="0" allowfullscreen>Drew</iframe>
-				</a>				
+			<div onclick="Click(7)" class="preview tooltip">
+				<p class="tooltiptext">Drew</p>
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~dcw0025/" style="overflow:hidden;"></iframe>			
 			</div>
 
-			<div class="preview tooltip">
-				<span class="tooltiptext">Kaylan</span>
-				<a href="http://webpages.uah.edu/~kw0066/" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~kw0066/" frameborder="0" allowfullscreen>Kaylan</iframe>
-				</a>				
+			<div onclick="Click(8)" class="preview tooltip">
+				<p class="tooltiptext">Kaylan</p>
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~kw0066/" style="overflow:hidden;"></iframe>		
 			</div>
 
-			<div class="preview tooltip">
-				<span class="tooltiptext">Johnathon</span>
-				<a href="http://webpages.uah.edu/~jk0071/" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~jk0071/" frameborder="0" allowfullscreen>Johnathon</iframe>
-				</a>				
+			<div onclick="Click(9)" class="preview tooltip">
+				<p class="tooltiptext">Johnathon</p>
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~jk0071/" style="overflow:hidden;"></iframe>		
 			</div>
 
-			<div class="preview tooltip">
-				<span class="tooltiptext">Kentrell</span>
-				<a href="http://webpages.uah.edu/~kdr0011" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~kdr0011" frameborder="0" allowfullscreen>Kentrell</iframe>
-				</a>					
+			<div onclick="Click(10)" class="preview tooltip">
+				<p class="tooltiptext">Kentrell</p>
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~kdr0011" style="overflow:hidden;"></iframe>				
 			</div>
 
-			<div class="preview tooltip">
-				<span class="tooltiptext">Ran</span>
-				<a href="http://webpages.uah.edu/~jrc0051/" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~jrc0051/" frameborder="0" allowfullscreen>Ran</iframe>
-				</a>				
+			<div onclick="Click(11)" class="preview tooltip">
+				<p class="tooltiptext">Ran</p>
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~jrc0051/" style="overflow:hidden;"></iframe>		
 			</div>
 
-			<div class="preview tooltip">
-				<span class="tooltiptext">Madison</span>
-				<a href="http://webpages.uah.edu/~mhd0003/sb1.html" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~mhd0003/sb1.html" frameborder="0" allowfullscreen>Madison</iframe>
-				</a>				
+			<div onclick="Click(12)" class="preview tooltip">
+				<p class="tooltiptext">Madison</p>
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~mhd0003/sb1.html" style="overflow:hidden;"></iframe>	
 			</div>
-			<div class="preview tooltip">
-				<span class="tooltiptext">Chloe</span>
-				<a href="http://webpages.uah.edu/~cnp0010/" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~cnp0010/" frameborder="0" allowfullscreen>Chloe</iframe>
-				</a>				
+			<div onclick="Click(13)" class="preview tooltip">
+				<p class="tooltiptext">Chloe</p>
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~cnp0010/" style="overflow:hidden;"></iframe>			
 			</div>			
-			<div class="preview tooltip">
-				<span class="tooltiptext">Callie</span>
-				<a href="http://webpages.uah.edu/~ccn0004/" target="_blank" class="linkwrap">
-				    <div class="blocker"></div>
-				    <iframe width="420" height="315" src="http://webpages.uah.edu/~ccn0004/" frameborder="0" allowfullscreen>Callie</iframe>
-				</a>				
+			<div onclick="Click(14)" class="preview tooltip">
+				<p class="tooltiptext">Callie</p>
+				    <iframe class="iFrame" width="420" height="315" src="http://webpages.uah.edu/~ccn0004/" style="overflow:hidden;"></iframe>				
 			</div>			
 		</div>
 

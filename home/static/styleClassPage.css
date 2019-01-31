@@ -17,21 +17,21 @@ body {
 }
 
 .gradientBackground {
-    height: 250px;
-    width:100%;
-    background-color: #1fc8db; /* For browsers that do not support gradients */        
-    background-image: linear-gradient(141deg, #9fb8ad 41%, #1fc8db 50%, #2cb5e8 75%);
-    color:white;
-    opacity:0.95;
-    color: white;
-    margin: auto;
-    width: 30%;
+  height: 250px;
+  width:100%;
+  background-color: #1fc8db; /* For browsers that do not support gradients */        
+  background-image: linear-gradient(141deg, #9fb8ad 41%, #1fc8db 50%, #2cb5e8 75%);
+  color:white;
+  opacity:0.95;
+  color: white;
+  margin: auto;
+  width: 30%;
 }
 
 .centerImg {
   display: block;
+  width:   70%;
   margin: auto;  
-  width:   50%;
 }
 
 .borderClass {
@@ -39,9 +39,9 @@ body {
 	border: var(--border-size) inset var(--border-color);
 	background-color: rgba(178, 178, 178, 0.8);
 	color: white;
-	margin-left:  30%;
-	margin-right: 30%;
-	padding: 10px;
+  width: 60%;
+  margin: auto;
+	/*padding: 10px;*/
 }
 .imgBorder {
 	border-radius: 10px;
@@ -55,10 +55,14 @@ body {
   color: red !important;
 }
 
-
 .linkwrap { position:relative; display:inline-block; }
+
 .blocker { 
-  position:absolute; height:100%; width:100%; z-index:1; background:rgba(0,0,0,0.01);  
+  position:absolute;
+  height:100%;
+  width:100%;
+  z-index:1;
+  background-color:rgba(0,0,0,0.5);  
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 .linkwrap iframe { z-index: 2; }
@@ -103,9 +107,8 @@ body {
 }
 
 /* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
+.tooltiptext {
+  text-align: center !important;
 }
 
 /* Tooltip text */
@@ -122,7 +125,7 @@ body {
   width:   50%;
   /* Position the tooltip text - see examples below! */
   position: absolute;
-  z-index: 1;
+  z-index: 8;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */

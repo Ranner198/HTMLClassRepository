@@ -1,5 +1,3 @@
-var figlet = require('figlet');
-
 function GetName() {
 	var name = document.getElementById("name").value;;
 	var returnName = document.getElementById("SetName");

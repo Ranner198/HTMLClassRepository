@@ -73,6 +73,7 @@ function MouseDown(event) {
 
 	if(event.button == 2)
 	{
+		return false;
 		for (var i = 0; i < positions.length; i++)
 		{
 			if (position.x > positions[i].x - radius && position.x < positions[i].x + radius && position.y > positions[i].y - radius && position.y < positions[i].y + radius)
