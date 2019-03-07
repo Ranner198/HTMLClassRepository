@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+    html, body {
+      height: 100%;
+      background-image: linear-gradient(#00F3FF, #0059FF);
+    }
+
+    /* The animation code */
+    @keyframes example {
+      0%   {background-color: red; left:0px;}
+      25%  {background: yellow;}
+      50%  {background-color: blue; left:200px;}
+      75%  {background: green;}
+      100% {background-color: red; left:0px;}
+    }
+
+    /* The element to apply the animation to */
+    .anim{
+      width: 100px;
+      height: 100px;
+      position: relative;
+      background-color: red;
+      animation-name: example;
+      animation-duration: 4s;
+    }
+
+    #spinner {
+      text-align: center;
+      animation-name: spin, depth;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+    }
+    @keyframes spin {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(-360deg); }
+    }
+    @keyframes depth {
+      0% { text-shadow: 0 0 black; }
+      25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+      50% { text-shadow: 0 0 black; }
+      75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+      100% { text-shadow: 0 0 black; }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div>
+    <p class="anim">I said 1 Thot</p>
+    <p class="anim" style="animation-delay: 1s;">2 Thot</p>
+    <p class="anim" style="animation-delay: 2s;">3 Thot</p>
+    <p class="anim" style="animation-delay: 4s;">I think I need a <strong style="color: pink;">FLU</strong> shot.</p>
+  </div>
+  <h1 style="color: red;">This is red</h1>
+  <h3 style="color:blue">This is blue</h3>
+  <p id="spinner">This is Spinning Text</p>
+
+  <h4>I wanna graduate :(</h4>
+  <pre>                      .odbo.
+                   .od88888888bo.
+               .od8888888888888888bo.
+           .od888888888888888888888888bo.
+        od88888888888888888888888888888888bo
+         `~888888888888888888888888888888~'
+            `~888888888888888888888888~'|
+               `~888888888888888888~'   |
+                 |`~888888888888~'|     |
+                 \   `~888888~'   /     A
+                  `-_   `~~'   _-'      H
+                     `--____--'   </pre>
+
+</body>
+
+</html>

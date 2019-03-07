@@ -50,11 +50,26 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="./static/style.css">
+		<style>
+			@media screen and (max-width: 600px) {
+  				body{
+      				width:100%;
+  	    		}
+  	    		.centerImg {
+  	    			width: 50% !important;
+  	    		}
+  			}
+		</style>
 		<title>We need GitHub</title>
 	</head>
 	<body class="background">
 
-		<!-- For Nav Showing -->
+
+		<!-- Scripts -->
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		<script src="../src/NavBar.js"></script>
+	<!--
 		<div style="padding-top: 40px; margin-top: -40px;">
 			<ul class="nav">
 			  <li><a class="active" href="./index.html">Home</a></li>
@@ -64,12 +79,13 @@
 			  <li><a href="./Portfolio.html">Portfolio</a></li>
 			</ul>
 		</div>
-
+	-->
 
 		<br style="display: block, margin: 50px 0;">
 
 		<br>
 			<button onclick="window.location.href = './InClassAssignment.html';">Class Webpage</button>			
+			<button onclick="window.location.href = './7_6.html';">7.6 Homework</button>	
 		<br>
 
 		<div class="borderClass" title="No you don't!">
@@ -107,5 +123,6 @@
 			<a href="http://rancrump.com/" target="_blank"><img src="./images/03.jpg" class="centerImg imgBorder"></a>
 			<a href="http://rancrump.com/" target="_blank"><img src="./images/04.jpg" class="centerImg imgBorder"></a>
 		</div>		
+
 	</body>
 </html>

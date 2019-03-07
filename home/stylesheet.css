@@ -1,0 +1,140 @@
+html, body {
+	background-image: url("./images/Space.gif");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.CenterElement {
+	margin: auto;
+  	width: 50%;
+  	/*padding: 10px;*/
+}
+
+.CenterText {
+	text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+	color: #7fffd4;
+}
+
+h1 {
+	font-size: 3.5em;
+	font-family: 'Orbitron', sans-serif;
+	letter-spacing: .3em;
+	font-style: bold;
+}
+
+#HeaderBorder {
+  width: 30%;
+  position: relative;
+	background-image: linear-gradient(150deg, #164796, #42f4ee);
+	border-width: .5em;
+	border-style: inset;
+	border-image: linear-gradient(150deg, #42f4ee, #164796) 30;
+}
+
+h1 {
+	-webkit-animation: color-change 4s infinite;
+ 	-moz-animation: color-change 4s infinite;
+  	-o-animation: color-change 4s infinite;
+    -ms-animation: color-change 4s infinite;
+    animation: color-change 4s infinite;
+}
+
+@-webkit-keyframes color-change {
+  0%   {color:red; text-shadow: 0 0 7px red;}
+  33%  {color:blue; text-shadow: 0 0 7px blue;}
+  66%  {color:green; text-shadow: 0 0 7px green;}
+  100% {color:red; text-shadow: 0 0 7px red;}
+}
+@-moz-keyframes color-change {
+  0%   {color:red; text-shadow: 0 0 7px red;}
+  33%  {color:blue; text-shadow: 0 0 7px blue;}
+  66%  {color:green; text-shadow: 0 0 7px green;}
+  100% {color:red; text-shadow: 0 0 7px red;}
+}
+@-ms-keyframes color-change {
+  0%   {color:red; text-shadow: 0 0 7px red;}
+  33%  {color:blue; text-shadow: 0 0 7px blue;}
+  66%  {color:green; text-shadow: 0 0 7px green;}
+  100% {color:red; text-shadow: 0 0 7px red;}
+}
+@-o-keyframes color-change {
+  0%   {color:red; text-shadow: 0 0 7px red;}
+  33%  {color:blue; text-shadow: 0 0 7px blue;}
+  66%  {color:green; text-shadow: 0 0 7px green;}
+  100% {color:red; text-shadow: 0 0 7px red;}
+}
+@keyframes color-change {
+  0%   {color:red; text-shadow: 0 0 7px red;}
+  33%  {color:blue; text-shadow: 0 0 7px blue;}
+  66%  {color:green; text-shadow: 0 0 7px green;}
+  100% {color:red; text-shadow: 0 0 7px red;}
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+p {
+  color: #7fffd4;
+  font-size: .6em;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+.IframeBorder {
+	border-width: .5em;
+	border-style: inset;
+	border-image: linear-gradient(150deg, #42f4ee, #164796) 30;
+}
+
+#FixIframe {
+	top: 22%;
+	left: 13%;
+	height: 75%;
+	width: 75%;
+	position: absolute;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  position: absolute;
+  top: 105%;
+  left: 22%;
+  bottom: 10px;
+  width: 50%;
+}
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.footer {
+    top: 150%;
+    position: absolute;
+    height: 35px;
+    width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
